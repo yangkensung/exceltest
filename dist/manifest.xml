@@ -103,7 +103,7 @@
         <!-- <bt:Url id="Commands.Url" DefaultValue="https://gsenc.sharepoint.com/:u:/s/msteams_3f3579/EQfXS7IzoJxPne5lmvNF6Z8B6AUBbOIMtBflC052VHfIBQ"/> -->
         <bt:Url id="Commands.Url" DefaultValue="https://yangkensung.github.io/exceltest/dist/commands.js"/>
         <!-- <bt:Url id="Commands.Url" DefaultValue="https://gsenc.sharepoint.com/:u:/s/msteams_3f3579/EdiRkGLu64dMuNd2y_xQtDIBurj8WifHwwswVUBCqLtT7w"/> -->
-        <bt:Url id="Taskpane.Url" DefaultValue="https://yangkensung.github.io/exceltest/dist/taskpane.html"/>/
+        <bt:Url id="Taskpane.Url" DefaultValue="https://yangkensung.github.io/exceltest/dist/taskpane.html"/>
         <!-- <bt:Url id="Taskpane.Url" DefaultValue="https://gsenc.sharepoint.com/:u:/s/msteams_3f3579/EeV-Y-Alq1tEqFbcyk3O3rYBObML1-phCIQD0OJLaaIPyA"/> -->
       </bt:Urls>
       <bt:ShortStrings>
