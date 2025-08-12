@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>53f59d04-2919-492e-9acb-9e408a01bddc</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>DXteam</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Xikit Data"/>
+  <Description DefaultValue="A template to get started."/>
+  <IconUrl DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/assets/icon-64.png"/>
+  <SupportUrl DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/help"/>
+  <AppDomains>
+    <AppDomain>https://gsenc.sharepoint.com/msteams_3f3579</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <DefaultSettings>
+    <!-- <SourceLocation DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/taskpane.html"/> -->
+    <SourceLocation DefaultValue="https://gsenc.sharepoint.com/:u:/s/msteams_3f3579/EeV-Y-Alq1tEqFbcyk3O3rYBObML1-phCIQD0OJLaaIPyA"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <FunctionFile resid="Commands.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="CommandsGroup">
+                <Label resid="CommandsGroup.Label"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon.16x16"/>
+                  <bt:Image size="32" resid="Icon.32x32"/>
+                  <bt:Image size="80" resid="Icon.80x80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TaskpaneButton">
+                  <Label resid="TaskpaneButton.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId1</TaskpaneId>
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="ExtractHyperlinksButton">
+                  <Label resid="ExtractHyperlinksButton.Label"/>
+                  <Supertip>
+                    <Title resid="ExtractHyperlinksButton.Label"/>
+                    <Description resid="ExtractHyperlinksButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>extractHyperlinks</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="DoSomething">
+                  <Label resid="DoSomething.Label"/>
+                  <Supertip>
+                    <Title resid="DoSomething.Label"/>
+                    <Description resid="DoSomething.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>doSomething</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16x16" DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/assets/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=2768url"/>
+        <!-- <bt:Url id="Commands.Url" DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/commands.html"/> -->
+        <!-- <bt:Url id="Commands.Url" DefaultValue="https://gsenc.sharepoint.com/:u:/s/msteams_3f3579/EQfXS7IzoJxPne5lmvNF6Z8B6AUBbOIMtBflC052VHfIBQ"/> -->
+        <!-- <bt:Url id="Commands.Url" DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/commands.js"/> -->
+        <bt:Url id="Commands.Url" DefaultValue="https://gsenc.sharepoint.com/:u:/s/msteams_3f3579/EdiRkGLu64dMuNd2y_xQtDIBurj8WifHwwswVUBCqLtT7w"/>
+        <!-- <bt:Url id="Taskpane.Url" DefaultValue="https://gsenc.sharepoint.com/sites/msteams_3f3579/Shared Documents/자이북/xikit/taskpane.html"/> -->/
+        <bt:Url id="Taskpane.Url" DefaultValue="https://gsenc.sharepoint.com/:u:/s/msteams_3f3579/EeV-Y-Alq1tEqFbcyk3O3rYBObML1-phCIQD0OJLaaIPyA"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
+        <bt:String id="CommandsGroup.Label" DefaultValue="Xikit Data"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Show Xikit Pane"/>
+        <bt:String id="ExtractHyperlinksButton.Label" DefaultValue="하이퍼링크 추출" />
+        <bt:String id="DoSomething.Label" DefaultValue="Do Something" />
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Task Pane' button to get started."/>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane"/>
+        <bt:String id="ExtractHyperlinksButton.Tooltip" DefaultValue="A열의 하이퍼링크 주소를 P열에 추출합니다." />
+        <bt:String id="DoSomething.Tooltip" DefaultValue="test." />
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
